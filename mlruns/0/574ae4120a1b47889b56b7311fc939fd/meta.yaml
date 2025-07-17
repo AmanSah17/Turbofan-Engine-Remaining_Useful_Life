@@ -1,0 +1,14 @@
+artifact_uri: file:///d:/turbofan_RUL/Turbofan-Engine-Remaining_Useful_Life/mlruns/0/574ae4120a1b47889b56b7311fc939fd/artifacts
+end_time: 1752717748764
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 574ae4120a1b47889b56b7311fc939fd
+run_name: LSTM_Model_02
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752717748671
+status: 4
+tags: []
+user_id: amans

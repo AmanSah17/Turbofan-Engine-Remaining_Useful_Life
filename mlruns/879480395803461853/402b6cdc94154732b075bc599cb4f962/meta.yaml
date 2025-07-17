@@ -1,0 +1,14 @@
+artifact_uri: file:///d:/turbofan_RUL/Turbofan-Engine-Remaining_Useful_Life/mlruns/879480395803461853/402b6cdc94154732b075bc599cb4f962/artifacts
+end_time: 1752718467598
+entry_point_name: ''
+experiment_id: '879480395803461853'
+lifecycle_stage: active
+run_id: 402b6cdc94154732b075bc599cb4f962
+run_name: selective-vole-215
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752718160521
+status: 4
+tags: []
+user_id: amans
