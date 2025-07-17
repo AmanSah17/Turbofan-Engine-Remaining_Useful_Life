@@ -1,0 +1,10 @@
+artifact_location: file:///d:/turbofan_RUL/Turbofan-Engine-Remaining_Useful_Life/mlruns/0/models/m-0eaabe46e7f842cab9138763b2d526a7/artifacts
+creation_timestamp: 1752723955419
+experiment_id: '0'
+last_updated_timestamp: 1752723972604
+model_id: m-0eaabe46e7f842cab9138763b2d526a7
+model_type: null
+name: model
+source_run_id: d55fc1ce3bab42d8b79187c3a8b7a58e
+status: 2
+status_message: null

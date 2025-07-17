@@ -1,0 +1,10 @@
+digest: e3f9426b
+name: dataset
+profile: '{"features_shape": [500, 30, 1], "features_size": 15000, "features_nbytes":
+  120000, "targets_shape": [500, 1], "targets_size": 500, "targets_nbytes": 4000}'
+schema: '{"mlflow_tensorspec": {"features": "[{\"type\": \"tensor\", \"tensor-spec\":
+  {\"dtype\": \"float64\", \"shape\": [-1, 30, 1]}}]", "targets": "[{\"type\": \"tensor\",
+  \"tensor-spec\": {\"dtype\": \"float64\", \"shape\": [-1, 1]}}]"}}'
+source: '{"tags": {"mlflow.user": "amans", "mlflow.source.name": "d:\\turbofan_RUL\\Turbofan-Engine-Remaining_Useful_Life\\tf_rul\\lib\\site-packages\\ipykernel_launcher.py",
+  "mlflow.source.type": "LOCAL"}}'
+source_type: code
