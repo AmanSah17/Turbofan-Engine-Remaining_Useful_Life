@@ -1,0 +1,14 @@
+artifact_uri: file:///d:/turbofan_RUL/Turbofan-Engine-Remaining_Useful_Life/mlruns/0/dc226f6fb422429499df76ac61c5a362/artifacts
+end_time: 1752713362180
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: dc226f6fb422429499df76ac61c5a362
+run_name: stately-bee-776
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752713362100
+status: 4
+tags: []
+user_id: amans
