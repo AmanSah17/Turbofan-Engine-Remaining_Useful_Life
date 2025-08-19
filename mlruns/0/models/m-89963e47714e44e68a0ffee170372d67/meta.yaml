@@ -1,0 +1,10 @@
+artifact_location: file:///d:/turbofan_RUL/Turbofan-Engine-Remaining_Useful_Life/mlruns/0/models/m-89963e47714e44e68a0ffee170372d67/artifacts
+creation_timestamp: 1755602592852
+experiment_id: '0'
+last_updated_timestamp: 1755602615437
+model_id: m-89963e47714e44e68a0ffee170372d67
+model_type: null
+name: Base_LSTM
+source_run_id: 2323cff80e664946bdb00ab7fc65df9a
+status: 2
+status_message: null

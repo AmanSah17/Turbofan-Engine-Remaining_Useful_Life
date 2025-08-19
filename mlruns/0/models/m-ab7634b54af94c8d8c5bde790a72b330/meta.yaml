@@ -1,0 +1,10 @@
+artifact_location: file:///d:/turbofan_RUL/Turbofan-Engine-Remaining_Useful_Life/mlruns/0/models/m-ab7634b54af94c8d8c5bde790a72b330/artifacts
+creation_timestamp: 1755603085514
+experiment_id: '0'
+last_updated_timestamp: 1755603103238
+model_id: m-ab7634b54af94c8d8c5bde790a72b330
+model_type: null
+name: Bidirectional_LSTM
+source_run_id: 4be11059061b47fabd9dcf68360a3e2d
+status: 2
+status_message: null
