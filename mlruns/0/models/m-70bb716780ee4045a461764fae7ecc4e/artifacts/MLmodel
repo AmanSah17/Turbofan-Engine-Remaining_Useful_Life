@@ -1,0 +1,20 @@
+artifact_path: file:///d:/turbofan_RUL/Turbofan-Engine-Remaining_Useful_Life/mlruns/0/models/m-70bb716780ee4045a461764fae7ecc4e/artifacts
+flavors:
+  keras:
+    data: data
+    keras_backend: tensorflow
+    keras_version: 3.10.0
+    save_exported_model: false
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.keras
+    python_version: 3.10.0
+mlflow_version: 3.1.1
+model_id: m-70bb716780ee4045a461764fae7ecc4e
+model_size_bytes: 358145
+model_uuid: m-70bb716780ee4045a461764fae7ecc4e
+prompts: null
+run_id: 5de537521256440ea90c45dd66b369c0
+utc_time_created: '2025-08-19 15:51:37.510180'

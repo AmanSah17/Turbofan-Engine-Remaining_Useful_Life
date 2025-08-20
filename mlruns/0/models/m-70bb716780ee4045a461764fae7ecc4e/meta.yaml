@@ -1,0 +1,10 @@
+artifact_location: file:///d:/turbofan_RUL/Turbofan-Engine-Remaining_Useful_Life/mlruns/0/models/m-70bb716780ee4045a461764fae7ecc4e/artifacts
+creation_timestamp: 1755618697419
+experiment_id: '0'
+last_updated_timestamp: 1755618706001
+model_id: m-70bb716780ee4045a461764fae7ecc4e
+model_type: null
+name: Hybrid_LSTM_GRU
+source_run_id: 5de537521256440ea90c45dd66b369c0
+status: 2
+status_message: null
