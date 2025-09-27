@@ -10,9 +10,10 @@ from tensorflow.keras.optimizers import Adam
 import tensorflow.keras.backend as K
 import matplotlib.pyplot as plt
 
+CURRENT_DIR = os.path.abspath(os.path.dirname(__file__))
 
 
-
+DATA_DIR = os.path.join(CURRENT_DIR, 'CMaps')
 DATA_PATH = "CMaps/train_FD001.txt"
 OP_COLS = ["op1", "op2", "op3"]
 SENSOR_COLS = [f"sensor{i}" for i in range(1, 22)]  # sensors 1 to 21
@@ -21,7 +22,70 @@ ALL_COLUMNS = ["unit", "time_cycles"] + OP_COLS + SENSOR_COLS
 
 SEQUENCE_LENGTH = 25
 
+def read_data(filepath):
+    """
+    Reads 'filepath as space separated file and returns pd.DataFrame
+    
+    """
+    ## We already have our colummn names stored  in  : ALL_COLUMNS 
+    return pd.read_csv(
+        filepath,
+        sep = '\s+',
+        header = None,
+        names= ALL_COLUMNS
+    )
 
+def read_dataset(dataset_name):
+    """
+    Reads TRAIN, TEST, And RUL datsets for specified dataset name.
+    
+    Parameters:
+    dataset_name: str,name of the dataset, eg: FD001
+
+    Returns:
+    -----
+    a tuple of (pd.DataFrame, pd.DataFrame, np.array) for TRAIN, TEST, and RUL
+    datasets correspondingly.
+
+    
+    """
+    
+    TRAIN_FILE = os.path.join(DATA_DIR, f'train_{dataset_name}.txt')
+    TEST_FILE = os.path.join(DATA_DIR, f'test_{dataset_name}.txt')
+    TEST_RUL_FILE = os.path.join(DATA_DIR, f'RUL_{dataset_name}.txt')
+
+    train_data = read_data(TRAIN_FILE)
+    test_data = read_data(TEST_FILE)
+    test_rul = np.loadtxt(TEST_RUL_FILE)
+
+    return train_data, test_data, test_rul
+
+
+def calculate_RUL(X, upper_threshold = None):
+    """
+    Calculate Remaining useful life per 'unit'.
+
+    Parameters
+    ____________
+    X : pd.DataFrame , with 'unit' and 'time_cycles' columns
+    upper_threshold : int : limit maximum RUL_values, default is NONE.
+
+
+    Returns
+    _____________________
+    np.array with Remaining useful life.
+
+    
+    """
+
+    lifetime = X.groupby(['unit'])['time_cycles'].transform(max)
+    rul = lifetime - X['time_cycles']
+
+
+    if upper_threshold:
+        rul = np.where(rul > upper_threshold, upper_threshold, rul)
+
+    return rul
 
 
 def get_callbacks(model_name):
